@@ -187,14 +187,14 @@
       let outcome = "It's a tie!";
 
       if ((p1 === "rock" && p2 === "scissors") || (p1 === "paper" && p2 === "rock") || (p1 === "scissors" && p2 === "paper")) {
-        outcome = ${names[0]} wins! 🎉;
+        outcome = `${names[0]} wins! 🎉`;
         scores[1]++;
       } else if (p1 !== p2) {
-        outcome = ${names[1]} wins! 🎉;
+        outcome = `${names[1]} wins! 🎉`;
         scores[2]++;
       }
 
-      document.getElementById("players").textContent = ${names[0]} chose ${emoji(p1)} 🆚 ${names[1]} chose ${emoji(p2)};
+      document.getElementById("players").textContent = `${names[0]} chose ${emoji(p1)} 🆚 ${names[1]} chose ${emoji(p2)}`;
       document.getElementById("result").textContent = outcome;
       updateScore();
       choices = { 1: "", 2: "" };
@@ -206,7 +206,7 @@
 
     function updateScore() {
       const names = gameMode === "cpu" ? ["Player", "Computer"] : ["Player 1", "Player 2"];
-      document.getElementById("scoreboard").textContent = ${names[0]}: ${scores[1]} | ${names[1]}: ${scores[2]};
+      document.getElementById("scoreboard").textContent = `${names[0]}: ${scores[1]} | ${names[1]}: ${scores[2]}`;
     }
 
     resetGame();
