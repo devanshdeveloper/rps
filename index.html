@@ -99,7 +99,7 @@
 </head>
 <body>
 
-  <h1>🪨📄✂ Rock Paper Scissors</h1>
+  <h1>🪨📄✂️ Rock Paper Scissors</h1>
 
   <label for="mode">Choose Game Mode:</label>
   <select id="mode" onchange="resetGame()">
@@ -116,7 +116,7 @@
       <h3>Player 1: Your Move</h3>
       <button class="emoji-btn" onclick="makeMove(1, 'rock')">✊</button>
       <button class="emoji-btn" onclick="makeMove(1, 'paper')">✋</button>
-      <button class="emoji-btn" onclick="makeMove(1, 'scissors')">✌</button>
+      <button class="emoji-btn" onclick="makeMove(1, 'scissors')">✌️</button>
     </div>
 
     <div class="move-panel" id="player2Panel">
@@ -124,7 +124,7 @@
       <div id="p2Buttons">
         <button class="emoji-btn" onclick="makeMove(2, 'rock')">✊</button>
         <button class="emoji-btn" onclick="makeMove(2, 'paper')">✋</button>
-        <button class="emoji-btn" onclick="makeMove(2, 'scissors')">✌</button>
+        <button class="emoji-btn" onclick="makeMove(2, 'scissors')">✌️</button>
       </div>
     </div>
   </div>
@@ -201,7 +201,7 @@
     }
 
     function emoji(move) {
-      return move === "rock" ? "✊" : move === "paper" ? "✋" : "✌";
+      return move === "rock" ? "✊" : move === "paper" ? "✋" : "✌️";
     }
 
     function updateScore() {
